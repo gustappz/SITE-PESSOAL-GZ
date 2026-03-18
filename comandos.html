@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Ziterith - Comandos de Aula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho idêntico ao resto do site -->
+    <header>
+        <div class="logo">Gustavo Ziterith</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="comandos.html" class="active">Comandos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Estrutura principal semântica (main) -->
+    <main>
+        <!-- Seção de Comandos de Aula -->
+        <section class="resumo comandos-header" id="comandos">
+            <h2>Comandos de Aula (Testes)</h2>
+            <p>Essa página foi feita para testar alguns comandos básicos que aprendi em aula, como textos, listas, links, imagens, tabelas e formulários.</p>
+        </section>
+
+        <div class="comandos-container">
+            <section class="exemplo-bloco">
+                <h3>Textos e Formatações</h3>
+                <p>Aqui está um parágrafo onde podemos testar a tag <strong>strong para texto em negrito</strong>.</p>
+                <p>A tag <em>em serve para itálico e dar ênfase</em> a uma palavra.</p>
+                <p><small>A tag small é para letras de rodapé e avisos pequenos.</small></p>
+            </section>
+
+            <section class="exemplo-bloco">
+                <h3>Listas (ul e li)</h3>
+                <p>Exemplo de uma lista não ordenada padrão:</p>
+                <ul>
+                    <li>Primeiro item da lista</li>
+                    <li>Segundo item da lista</li>
+                </ul>
+            </section>
+
+            <section class="exemplo-bloco" id="ancora-links">
+                <h3>Testando os Links (a href)</h3>
+                <p><a href="index.html">Voltar para a página inicial (interno)</a></p>
+                <p><a href="https://www.google.com" target="_blank">Site externo (abre o Google em nova aba)</a></p>
+                <p><a href="#ancora-links">Link âncora (traz para o título desta aba de links)</a></p>
+            </section>
+
+            <section class="exemplo-bloco">
+                <h3>Imagem de Exemplo (img)</h3>
+                <p>Testando a exibição de imagem com a propriedade 'alt' por acessibilidade.</p>
+                <img src="perfil.jpg" alt="Foto de teste exibida na página de comandos" class="foto-aula">
+            </section>
+
+            <section class="exemplo-bloco">
+                <h3>Construindo uma Tabela (table, tr, td, th)</h3>
+                <table class="tabela-aula">
+                    <caption>Minhas Notas Iniciais:</caption>
+                    <tr>
+                        <th>Disciplina</th>
+                        <th>Semestre</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>O Básico de HTML</td>
+                        <td>Primeiro</td>
+                        <td>Aprovado</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="exemplo-bloco">
+                <h3>Formulário de Contato Acadêmico (form, fieldset, inputs)</h3>
+                <form class="formulario-aula">
+                    <fieldset>
+                        <legend>Dados de Exemplo</legend>
+                        
+                        <div class="campo-aula">
+                            <label>Nome do Aluno:</label>
+                            <input type="text" placeholder="Fulano da Silva">
+                        </div>
+                        
+                        <div class="campo-aula radio-grupo">
+                            <label>Qual período você estuda?</label><br>
+                            <label><input type="radio" name="turno" value="manha"> Manhã</label>
+                            <label><input type="radio" name="turno" value="tarde"> Tarde</label>
+                            <label><input type="radio" name="turno" value="noite"> Noite</label>
+                        </div>
+                        
+                        <div class="campo-aula">
+                            <label>Comentários:</label>
+                            <textarea rows="3" placeholder="Insira seu texto na textarea..."></textarea>
+                        </div>
+                        
+                        <button type="button" class="btn-enviar-aula">Enviar Teste</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="exemplo-bloco">
+                <h3>CSS Básico (Testando Cores e Hover)</h3>
+                <div class="caixa-teste-css">
+                    Passe o mouse por cima de mim para testar o 'hover' do CSS! Ele altera borda e background-color.
+                </div>
+            </section>
+
+            <section class="exemplo-bloco">
+                <h3>Estrutura Semântica HTML5</h3>
+                <p>Usei aqui os comandos básicos ensinados pelo professor, como header, nav, main e footer.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Site do Gustavo Z.</p>
+    </footer>
+
+</body>
+
+</html>
